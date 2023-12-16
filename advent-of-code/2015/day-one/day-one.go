@@ -1,4 +1,4 @@
-package advent
+package advent2015DayOne
 
 import (
 	"fmt"
@@ -23,7 +23,7 @@ func readInput() (int, []byte) {
 	return count, data
 }
 
-func DayOne() {
+func PartOne() {
 	fmt.Println("Advent of Code | 2015 | Day One")
 
 	count, data := readInput()
