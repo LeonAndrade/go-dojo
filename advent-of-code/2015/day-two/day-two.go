@@ -33,7 +33,6 @@ func PartOne() int {
 	fmt.Println("Hello DayTwo")
 	data, err := os.ReadFile("./advent-of-code/2015/day-two/input-day-two.txt")
 	if err != nil {
-		fmt.Println(err)
 		log.Fatal(err)
 	}
 

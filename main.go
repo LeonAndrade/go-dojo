@@ -5,6 +5,7 @@ import (
 
 	advent2015DayOne "github.com/LeonAndrade/go-dojo/advent-of-code/2015/day-one"
 	advent2015DayTwo "github.com/LeonAndrade/go-dojo/advent-of-code/2015/day-two"
+	"github.com/LeonAndrade/go-dojo/fundamentals"
 )
 
 func DayOne() {
@@ -19,6 +20,8 @@ func DayTwo() {
 func main() {
 	fmt.Println("=== Go Dojo ===")
 	fmt.Println(" ")
+
+	fundamentals.BasicDataStructures()
 
 	DayTwo()
 }
