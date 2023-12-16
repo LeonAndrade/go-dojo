@@ -10,16 +10,16 @@ import (
 
 func minSize(w int, h int, l int) int {
 
-	a := l*w
-	b := w*h
-	c := h*l
+	a := l * w
+	b := w * h
+	c := h * l
 
 	if a <= b {
 		if a <= c {
 			return a
 		} else {
 			return c
-		} 
+		}
 	} else {
 		if b <= c {
 			return b
@@ -31,35 +31,37 @@ func minSize(w int, h int, l int) int {
 
 func PartOne() int {
 	fmt.Println("Hello DayTwo")
-	data, err := os.ReadFile("./advent-of-code/2015/day-two/input-day-two.txt");
+	data, err := os.ReadFile("./advent-of-code/2015/day-two/input-day-two.txt")
 	if err != nil {
 		fmt.Println(err)
 		log.Fatal(err)
 	}
 
 	boxSizes := strings.Split(string(data), "\n")
-	
+
 	result := 0
-	for i:=0;i<len(boxSizes);i++ {
+	for i := 0; i < len(boxSizes); i++ {
 		dim := strings.Split(boxSizes[i], "x")
 
-		var w int;
-		var h int;
-		var l int;
-
 		w, wErr := strconv.Atoi(dim[0])
-		if wErr != nil { log.Fatal(err) }
-		
+		if wErr != nil {
+			log.Fatal(err)
+		}
+
 		h, hErr := strconv.Atoi(dim[1])
-		if hErr != nil { log.Fatal(err) }
-		
+		if hErr != nil {
+			log.Fatal(err)
+		}
+
 		l, lErr := strconv.Atoi(dim[2])
-		if lErr != nil { log.Fatal(err) }
+		if lErr != nil {
+			log.Fatal(err)
+		}
 
 		minValue := minSize(w, h, l)
-		boxSurface := (2*l*w) + (2*w*h) + (2*h*l)
+		boxSurface := (2 * l * w) + (2 * w * h) + (2 * h * l)
 		result += (boxSurface + minValue)
-		
+
 	}
 	fmt.Println(result)
 	return result

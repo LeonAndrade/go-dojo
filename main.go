@@ -9,7 +9,7 @@ import (
 
 func DayOne() {
 	advent2015DayOne.PartOne()
-	advent2015DayOne.PartTwo()	
+	advent2015DayOne.PartTwo()
 }
 
 func DayTwo() {
@@ -19,6 +19,6 @@ func DayTwo() {
 func main() {
 	fmt.Println("=== Go Dojo ===")
 	fmt.Println(" ")
-	
+
 	DayTwo()
 }
