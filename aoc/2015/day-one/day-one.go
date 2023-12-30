@@ -27,7 +27,6 @@ func PartOne() {
 	fmt.Println("Advent of Code | 2015 | Day One")
 
 	count, data := readInput()
-	// fmt.Println(string(data))
 	floor := 0
 
 	for i := 0; i < count; i++ {

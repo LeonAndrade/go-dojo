@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	advent2015DayOne "github.com/LeonAndrade/go-dojo/advent-of-code/2015/day-one"
-	advent2015DayTwo "github.com/LeonAndrade/go-dojo/advent-of-code/2015/day-two"
+	advent2015DayOne "github.com/LeonAndrade/go-dojo/aoc/2015/day-one"
+	advent2015DayTwo "github.com/LeonAndrade/go-dojo/aoc/2015/day-two"
 	"github.com/LeonAndrade/go-dojo/fundamentals"
 )
 
